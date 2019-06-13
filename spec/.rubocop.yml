@@ -1,0 +1,13 @@
+inherit_from: ../.rubocop.yml
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 250
+
+RSpec/NestedGroups:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false

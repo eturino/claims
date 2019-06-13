@@ -1,0 +1,45 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'tmp/**/*'
+    - 'db/schema.rb'
+    - 'claims.gemspec'
+  TargetRubyVersion: 2.4
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 140
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/HookArgument:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
