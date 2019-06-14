@@ -6,6 +6,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 # Specify your gem's dependencies in claims.gemspec
 gemspec
-1
+
 gem 'rubocop'
 gem 'rubocop-rspec'
+gem 'simplecov', require: false, group: :test
