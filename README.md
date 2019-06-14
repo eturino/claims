@@ -1,6 +1,7 @@
 # Claims
 
 [![Build Status](https://travis-ci.org/eturino/claims.svg?branch=master)](https://travis-ci.org/eturino/claims)
+[![codebeat badge](https://codebeat.co/badges/37928c35-192c-401c-89db-3b8d0ea7977b)](https://codebeat.co/projects/github-com-eturino-claims-master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7519a8f158af0d6b2493/maintainability)](https://codeclimate.com/github/eturino/claims/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7519a8f158af0d6b2493/test_coverage)](https://codeclimate.com/github/eturino/claims/test_coverage)
 
