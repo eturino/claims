@@ -1,6 +1,8 @@
 # Claims
 
 [![Build Status](https://travis-ci.org/eturino/claims.svg?branch=master)](https://travis-ci.org/eturino/claims)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7519a8f158af0d6b2493/maintainability)](https://codeclimate.com/github/eturino/claims/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7519a8f158af0d6b2493/test_coverage)](https://codeclimate.com/github/eturino/claims/test_coverage)
 
 TBD
 
