@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'sorted_set'
 
 module Claims
   class ClaimSet

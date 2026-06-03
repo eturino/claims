@@ -128,19 +128,19 @@ module Claims
     # @param query_hash [Hash<Symbol,String>] like `x.query? read: 'some.resource'`
     # @return [true|false]
     def query?(query_hash)
-      check_query Claim.parse_query_hash(query_hash)
+      check_query(**Claim.parse_query_hash(query_hash))
     end
 
     # @param claim [Claims::Claim] like `query?` using the claim verb and the claim resource
     # @return [true|false]
     def query_claim?(claim)
-      check_query Claim.parse_query_hash({ claim.verb => claim.resource })
+      check_query(**Claim.parse_query_hash({ claim.verb => claim.resource }))
     end
 
     # @param query_hash [Hash<Symbol,String>] like `x.query? read: 'some.resource'`
     # @return [true|false]
     def exact?(query_hash)
-      check_exact Claim.parse_query_hash(query_hash)
+      check_exact(**Claim.parse_query_hash(query_hash))
     end
 
     # if the Claim has a resource that is inside of the queried resource (with the same verb),
@@ -155,7 +155,7 @@ module Claims
     # @param query_hash [Hash<Symbol,String>] like `x.query? read: 'some.resource'`
     # @return [String|NullClass]
     def direct_child(query_hash)
-      lookup_direct_child Claim.parse_query_hash(query_hash)
+      lookup_direct_child(**Claim.parse_query_hash(query_hash))
     end
 
     # boolean version of `direct_child`
@@ -178,7 +178,7 @@ module Claims
     # @param query_hash [Hash<Symbol,String>] like `x.query? read: 'some.resource'`
     # @return [String|NullClass] the single resource level after the query, or nil
     def direct_descendant(query_hash)
-      lookup_direct_descendant Claim.parse_query_hash(query_hash)
+      lookup_direct_descendant(**Claim.parse_query_hash(query_hash))
     end
 
     # boolean version of `direct_descendant`
